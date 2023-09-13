@@ -20,6 +20,13 @@
     border-radius: 15px;
 }
 
+.menu_option{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
 .btn__Search{
     background-color: #71A821;
     color: white;
@@ -35,7 +42,6 @@
     width: -webkit-fill-available;
     
 }
-
 
 
 /* localInfo */
