@@ -16,7 +16,7 @@ function App() {
   const [lastItem, setLastItem] = useState(8)
   const [currentLocation, setCurrentLocation] = useState(null)
   const [locationsList, setLocationsList] = useState([])
-  const [errorMessage, setErrorMessage] = useState("Hey! you must provide an id from 1 to 126 or the location's name ❌")
+  const [errorMessage, setErrorMessage] = useState("Hey! you must provide an id from 1 to 126 or the location's name")
   const lastIndex = firstItem * lastItem
   const firstIndex = lastIndex - lastItem
   let quantyty = 8
@@ -81,14 +81,17 @@ function App() {
             })
           }
         </div>
-
+          
         {
         isLoading 
         ? <Loader/>
         :
         (
           hasError
-          ? <h2 className='hasErr'>{ errorMessage }</h2>
+          ? 
+            <div className='hasErr'>
+              <p>{ errorMessage }</p>
+            </div>
           : <>
 
         <LocationInfo

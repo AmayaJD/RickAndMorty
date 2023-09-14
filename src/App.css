@@ -27,6 +27,15 @@
     gap: 5px;
 }
 
+.hasErr{
+    display: flex;
+    text-align: center;
+    background: #71A821;
+    padding: 10px;
+    border-radius: 17px;
+    margin: 0 50px; 
+}
+
 .btn__Search{
     background-color: #71A821;
     color: white;
